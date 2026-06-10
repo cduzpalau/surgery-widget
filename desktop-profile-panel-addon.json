@@ -1,0 +1,26 @@
+{
+    "comp": "md-tab",
+    "attributes": { "slot": "tab", "class": "widget-pane-tab" },
+    "children": [{ "comp": "span", "textContent": "SDK Widget" }]
+  },
+  
+  {
+    "comp": "md-tab-panel",
+    "attributes": {
+      "slot": "panel",
+      "class": "widget-pane"
+    },
+    "children": [
+      {
+        "comp": "wxcc-widget-fresh",
+        "script": "http://localhost:5000/wxcc-widget-fresh.js",
+        "wrapper": {
+          "title": "SDK Widget",
+          "maximizeAreaName": "app-maximize-area"
+        },
+        "attributes": {
+          "darkmode": "$STORE.app.darkMode"
+        }
+      }
+    ]
+  }

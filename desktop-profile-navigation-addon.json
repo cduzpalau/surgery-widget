@@ -1,0 +1,30 @@
+{
+    "nav": {
+      "label": "WxCC SDK Widget",
+      "icon": "3d-object",
+      "iconType": "momentum",
+      "navigateTo": "wxcc-sdk-widget",
+      "align": "top"
+    },
+    "page": {
+      "id": "wxcc-sdk-widget",
+      "widgets": {
+        "comp2": {
+
+            "comp": "wxcc-widget-fresh",
+            "script": "http://localhost:5000/wxcc-widget-fresh.js",
+            "wrapper": {
+                "title": "WxCC SDK Widget",
+                "maximizeAreaName": "app-maximize-area"
+            }
+        }
+      },
+      "layout": {
+        "areas": [["comp2"]],
+        "size": {
+          "cols": [1],
+          "rows": [1]
+        }
+      }
+    }
+}
